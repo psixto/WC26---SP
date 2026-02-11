@@ -1,25 +1,22 @@
 import { useRouter } from "../hooks/useRouter.jsx"
+import styles from './Home.module.css'
+import { useAuth } from "../context/AuthContext.jsx";
 
 export default function HomePage() {
     const { navigateTo } = useRouter()
-
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        const formData = new FormData(event.target)
-        const searchTerm = formData.get('search')
-
-
-        const url = searchTerm !== ''
-            ? '/search?text=' + encodeURIComponent(searchTerm)
-            : '/search'
-        
-        navigateTo(url)
-    }
+    const { isLoggedIn } = useAuth()
+    
     
     return (
         <main>
-            <section>
-                <img src="./background.webp" />
+            <section className={styles.presentationContainer}>
+                <img src="./background.jpg" />
+                <div className={styles.overlay}>
+                    <h3>THE WORLD STAGE AWAITS</h3>
+                    <h4>Predict winners, earn points and won prizes!</h4>
+                    <span></span>
+                    <button className={isLoggedIn ? styles.predictionBtn : `${styles.predictionBtn} ${styles.disabled}`} onClick={() => navigateTo('/prediction')}>Start Predicting</button>
+                </div>
             </section>
         </main>
     )

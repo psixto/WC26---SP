@@ -1,0 +1,44 @@
+main > section > img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	mask-image: linear-gradient(to bottom, rgba(16, 25, 34, 1) 5%, rgba(16, 25, 34, 0) 90%);
+  
+}
+
+.presentationContainer {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+	z-index: 1;
+}
+
+.predictionBtn {
+	padding: 0.75rem 1.5rem;
+	background-color: var(--primary-light);
+	color: var(--text-primary);
+	border: none;
+	border-radius: 2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
