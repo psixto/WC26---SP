@@ -23,8 +23,8 @@ export default function Header() {
 
 
                 <nav className={`${styles.nav} ${open ? styles.show : ""}`}>
-                    <Link onClick={() => setOpen(false)} href="./">Inicio</Link>
-                    <Link onClick={() => setOpen(false)} href="./page1">Page1</Link>
+                    <Link onClick={() => setOpen(false)} href="./">Home</Link>
+                    <Link onClick={() => setOpen(false)} href="./Leaderboard">Leaderboard</Link>
                     <Link onClick={() => setOpen(false)} href="./page2">Page2</Link>
                 </nav>
                  <button className={styles.btnUser} onClick={isLoggedIn ? handleLogout : handleLogin}>
