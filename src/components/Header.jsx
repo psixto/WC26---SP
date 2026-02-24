@@ -25,7 +25,7 @@ export default function Header() {
                 <nav className={`${styles.nav} ${open ? styles.show : ""}`}>
                     <Link onClick={() => setOpen(false)} href="./">Home</Link>
                     <Link onClick={() => setOpen(false)} href="./Leaderboard">Leaderboard</Link>
-                    <Link onClick={() => setOpen(false)} href="./page2">Page2</Link>
+                    <Link onClick={() => setOpen(false)} href="./prediction">Prediction</Link>
                 </nav>
                  <button className={styles.btnUser} onClick={isLoggedIn ? handleLogout : handleLogin}>
                     <svg className={styles.iconUser} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
