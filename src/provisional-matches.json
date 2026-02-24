@@ -1,101 +1,101 @@
 {
-  "torneo": "Copa Mundial de la FIFA 2026",
-  "fase_de_grupos": {
-    "Grupo A": [
-      { "partido_nro": 1, "fecha": "2026-06-11", "equipo_local": "México", "equipo_visitante": "Sudáfrica" },
-      { "partido_nro": 2, "fecha": "2026-06-11", "equipo_local": "República de Corea", "equipo_visitante": "Ganador Playoff UEFA D" },
-      { "partido_nro": 25, "fecha": "2026-06-17", "equipo_local": "Sudáfrica", "equipo_visitante": "Ganador Playoff UEFA D" },
-      { "partido_nro": 28, "fecha": "2026-06-18", "equipo_local": "México", "equipo_visitante": "República de Corea" },
-      { "partido_nro": 53, "fecha": "2026-06-24", "equipo_local": "Ganador Playoff UEFA D", "equipo_visitante": "México" },
-      { "partido_nro": 54, "fecha": "2026-06-24", "equipo_local": "Sudáfrica", "equipo_visitante": "República de Corea" }
-    ],
-    "Grupo B": [
-      { "partido_nro": 3, "fecha": "2026-06-12", "equipo_local": "Canadá", "equipo_visitante": "Ganador Playoff UEFA A" },
-      { "partido_nro": 4, "fecha": "2026-06-12", "equipo_local": "Qatar", "equipo_visitante": "Suiza" },
-      { "partido_nro": 26, "fecha": "2026-06-18", "equipo_local": "Ganador Playoff UEFA A", "equipo_visitante": "Suiza" },
-      { "partido_nro": 27, "fecha": "2026-06-18", "equipo_local": "Canadá", "equipo_visitante": "Qatar" },
-      { "partido_nro": 51, "fecha": "2026-06-24", "equipo_local": "Suiza", "equipo_visitante": "Canadá" },
-      { "partido_nro": 52, "fecha": "2026-06-24", "equipo_local": "Ganador Playoff UEFA A", "equipo_visitante": "Qatar" }
-    ],
-    "Grupo C": [
-      { "partido_nro": 5, "fecha": "2026-06-13", "equipo_local": "Brasil", "equipo_visitante": "Marruecos" },
-      { "partido_nro": 6, "fecha": "2026-06-13", "equipo_local": "Haití", "equipo_visitante": "Escocia" },
-      { "partido_nro": 29, "fecha": "2026-06-19", "equipo_local": "Brasil", "equipo_visitante": "Haití" },
-      { "partido_nro": 30, "fecha": "2026-06-19", "equipo_local": "Escocia", "equipo_visitante": "Marruecos" },
-      { "partido_nro": 49, "fecha": "2026-06-24", "equipo_local": "Marruecos", "equipo_visitante": "Haití" },
-      { "partido_nro": 50, "fecha": "2026-06-24", "equipo_local": "Escocia", "equipo_visitante": "Brasil" }
-    ],
-    "Grupo D": [
-      { "partido_nro": 7, "fecha": "2026-06-12", "equipo_local": "Estados Unidos", "equipo_visitante": "Paraguay" },
-      { "partido_nro": 8, "fecha": "2026-06-13", "equipo_local": "Australia", "equipo_visitante": "Ganador Playoff UEFA C" },
-      { "partido_nro": 31, "fecha": "2026-06-19", "equipo_local": "Estados Unidos", "equipo_visitante": "Australia" },
-      { "partido_nro": 32, "fecha": "2026-06-19", "equipo_local": "Ganador Playoff UEFA C", "equipo_visitante": "Paraguay" },
-      { "partido_nro": 59, "fecha": "2026-06-25", "equipo_local": "Paraguay", "equipo_visitante": "Australia" },
-      { "partido_nro": 60, "fecha": "2026-06-25", "equipo_local": "Ganador Playoff UEFA C", "equipo_visitante": "Estados Unidos" }
-    ],
-    "Grupo E": [
-      { "partido_nro": 9, "fecha": "2026-06-14", "equipo_local": "Alemania", "equipo_visitante": "Curazao" },
-      { "partido_nro": 10, "fecha": "2026-06-14", "equipo_local": "Costa de Marfil", "equipo_visitante": "Ecuador" },
-      { "partido_nro": 33, "fecha": "2026-06-20", "equipo_local": "Alemania", "equipo_visitante": "Costa de Marfil" },
-      { "partido_nro": 34, "fecha": "2026-06-20", "equipo_local": "Ecuador", "equipo_visitante": "Curazao" },
-      { "partido_nro": 55, "fecha": "2026-06-25", "equipo_local": "Curazao", "equipo_visitante": "Costa de Marfil" },
-      { "partido_nro": 56, "fecha": "2026-06-25", "equipo_local": "Ecuador", "equipo_visitante": "Alemania" }
-    ],
-    "Grupo F": [
-      { "partido_nro": 11, "fecha": "2026-06-14", "equipo_local": "Países Bajos", "equipo_visitante": "Japón" },
-      { "partido_nro": 12, "fecha": "2026-06-14", "equipo_local": "Ganador Playoff UEFA B", "equipo_visitante": "Túnez" },
-      { "partido_nro": 35, "fecha": "2026-06-20", "equipo_local": "Países Bajos", "equipo_visitante": "Ganador Playoff UEFA B" },
-      { "partido_nro": 36, "fecha": "2026-06-20", "equipo_local": "Túnez", "equipo_visitante": "Japón" },
-      { "partido_nro": 57, "fecha": "2026-06-25", "equipo_local": "Japón", "equipo_visitante": "Ganador Playoff UEFA B" },
-      { "partido_nro": 58, "fecha": "2026-06-25", "equipo_local": "Túnez", "equipo_visitante": "Países Bajos" }
-    ],
-    "Grupo G": [
-      { "partido_nro": 13, "fecha": "2026-06-15", "equipo_local": "Bélgica", "equipo_visitante": "Egipto" },
-      { "partido_nro": 14, "fecha": "2026-06-15", "equipo_local": "Irán", "equipo_visitante": "Nueva Zelanda" },
-      { "partido_nro": 37, "fecha": "2026-06-21", "equipo_local": "Bélgica", "equipo_visitante": "Irán" },
-      { "partido_nro": 38, "fecha": "2026-06-21", "equipo_local": "Nueva Zelanda", "equipo_visitante": "Egipto" },
-      { "partido_nro": 61, "fecha": "2026-06-26", "equipo_local": "Egipto", "equipo_visitante": "Irán" },
-      { "partido_nro": 62, "fecha": "2026-06-26", "equipo_local": "Nueva Zelanda", "equipo_visitante": "Bélgica" }
-    ],
-    "Grupo H": [
-      { "partido_nro": 15, "fecha": "2026-06-15", "equipo_local": "España", "equipo_visitante": "Cabo Verde" },
-      { "partido_nro": 16, "fecha": "2026-06-15", "equipo_local": "Arabia Saudita", "equipo_visitante": "Uruguay" },
-      { "partido_nro": 39, "fecha": "2026-06-21", "equipo_local": "España", "equipo_visitante": "Arabia Saudita" },
-      { "partido_nro": 40, "fecha": "2026-06-21", "equipo_local": "Uruguay", "equipo_visitante": "Cabo Verde" },
-      { "partido_nro": 63, "fecha": "2026-06-26", "equipo_local": "Cabo Verde", "equipo_visitante": "Arabia Saudita" },
-      { "partido_nro": 64, "fecha": "2026-06-26", "equipo_local": "Uruguay", "equipo_visitante": "España" }
-    ],
-    "Grupo I": [
-      { "partido_nro": 17, "fecha": "2026-06-16", "equipo_local": "Francia", "equipo_visitante": "Senegal" },
-      { "partido_nro": 18, "fecha": "2026-06-16", "equipo_local": "Ganador Repechaje 1", "equipo_visitante": "Noruega" },
-      { "partido_nro": 41, "fecha": "2026-06-22", "equipo_local": "Francia", "equipo_visitante": "Ganador Repechaje 1" },
-      { "partido_nro": 42, "fecha": "2026-06-22", "equipo_local": "Noruega", "equipo_visitante": "Senegal" },
-      { "partido_nro": 65, "fecha": "2026-06-26", "equipo_local": "Senegal", "equipo_visitante": "Ganador Repechaje 1" },
-      { "partido_nro": 66, "fecha": "2026-06-26", "equipo_local": "Noruega", "equipo_visitante": "Francia" }
-    ],
-    "Grupo J": [
-      { "partido_nro": 19, "fecha": "2026-06-16", "equipo_local": "Argentina", "equipo_visitante": "Argelia" },
-      { "partido_nro": 20, "fecha": "2026-06-16", "equipo_local": "Austria", "equipo_visitante": "Jordania" },
-      { "partido_nro": 43, "fecha": "2026-06-22", "equipo_local": "Argentina", "equipo_visitante": "Austria" },
-      { "partido_nro": 44, "fecha": "2026-06-22", "equipo_local": "Jordania", "equipo_visitante": "Argelia" },
-      { "partido_nro": 67, "fecha": "2026-06-27", "equipo_local": "Argelia", "equipo_visitante": "Austria" },
-      { "partido_nro": 68, "fecha": "2026-06-27", "equipo_local": "Jordania", "equipo_visitante": "Argentina" }
-    ],
-    "Grupo K": [
-      { "partido_nro": 21, "fecha": "2026-06-17", "equipo_local": "Portugal", "equipo_visitante": "Ganador Repechaje 2" },
-      { "partido_nro": 22, "fecha": "2026-06-17", "equipo_local": "Uzbekistán", "equipo_visitante": "Colombia" },
-      { "partido_nro": 45, "fecha": "2026-06-23", "equipo_local": "Portugal", "equipo_visitante": "Uzbekistán" },
-      { "partido_nro": 46, "fecha": "2026-06-23", "equipo_local": "Colombia", "equipo_visitante": "Ganador Repechaje 2" },
-      { "partido_nro": 69, "fecha": "2026-06-27", "equipo_local": "Ganador Repechaje 2", "equipo_visitante": "Uzbekistán" },
-      { "partido_nro": 70, "fecha": "2026-06-27", "equipo_local": "Colombia", "equipo_visitante": "Portugal" }
-    ],
-    "Grupo L": [
-      { "partido_nro": 23, "fecha": "2026-06-17", "equipo_local": "Inglaterra", "equipo_visitante": "Croacia" },
-      { "partido_nro": 24, "fecha": "2026-06-17", "equipo_local": "Ghana", "equipo_visitante": "Panamá" },
-      { "partido_nro": 47, "fecha": "2026-06-23", "equipo_local": "Inglaterra", "equipo_visitante": "Ghana" },
-      { "partido_nro": 48, "fecha": "2026-06-23", "equipo_local": "Panamá", "equipo_visitante": "Croacia" },
-      { "partido_nro": 71, "fecha": "2026-06-27", "equipo_local": "Croacia", "equipo_visitante": "Ghana" },
-      { "partido_nro": 72, "fecha": "2026-06-27", "equipo_local": "Panamá", "equipo_visitante": "Inglaterra" }
-    ]
-  }
+    "stage": "Group stage",
+    "matches": {
+        "Group A": [
+            { "match_nro": 1, "date": "2026-06-11", "home_team": "Mexico", "away_team": "South Africa" },
+            { "match_nro": 2, "date": "2026-06-11", "home_team": "South Korea", "away_team": "UEFA Playoff D Winner" },
+            { "match_nro": 25, "date": "2026-06-17", "home_team": "South Africa", "away_team": "UEFA Playoff D Winner" },
+            { "match_nro": 28, "date": "2026-06-18", "home_team": "Mexico", "away_team": "South Korea" },
+            { "match_nro": 53, "date": "2026-06-24", "home_team": "UEFA Playoff D Winner", "away_team": "Mexico" },
+            { "match_nro": 54, "date": "2026-06-24", "home_team": "South Africa", "away_team": "South Korea" }
+        ],
+        "Group B": [
+            { "match_nro": 3, "date": "2026-06-12", "home_team": "Canada", "away_team": "UEFA Playoff A Winner" },
+            { "match_nro": 4, "date": "2026-06-12", "home_team": "Qatar", "away_team": "Switzerland" },
+            { "match_nro": 26, "date": "2026-06-18", "home_team": "UEFA Playoff A Winner", "away_team": "Switzerland" },
+            { "match_nro": 27, "date": "2026-06-18", "home_team": "Canada", "away_team": "Qatar" },
+            { "match_nro": 51, "date": "2026-06-24", "home_team": "Switzerland", "away_team": "Canada" },
+            { "match_nro": 52, "date": "2026-06-24", "home_team": "UEFA Playoff A Winner", "away_team": "Qatar" }
+        ],
+        "Group C": [
+            { "match_nro": 5, "date": "2026-06-13", "home_team": "Brazil", "away_team": "Morocco" },
+            { "match_nro": 6, "date": "2026-06-13", "home_team": "Haiti", "away_team": "Scotland" },
+            { "match_nro": 29, "date": "2026-06-19", "home_team": "Brazil", "away_team": "Haiti" },
+            { "match_nro": 30, "date": "2026-06-19", "home_team": "Scotland", "away_team": "Morocco" },
+            { "match_nro": 49, "date": "2026-06-24", "home_team": "Morocco", "away_team": "Haiti" },
+            { "match_nro": 50, "date": "2026-06-24", "home_team": "Scotland", "away_team": "Brazil" }
+        ],
+        "Group D": [
+            { "match_nro": 7, "date": "2026-06-12", "home_team": "United States", "away_team": "Paraguay" },
+            { "match_nro": 8, "date": "2026-06-13", "home_team": "Australia", "away_team": "UEFA Playoff C Winner" },
+            { "match_nro": 31, "date": "2026-06-19", "home_team": "United States", "away_team": "Australia" },
+            { "match_nro": 32, "date": "2026-06-19", "home_team": "UEFA Playoff C Winner", "away_team": "Paraguay" },
+            { "match_nro": 59, "date": "2026-06-25", "home_team": "Paraguay", "away_team": "Australia" },
+            { "match_nro": 60, "date": "2026-06-25", "home_team": "UEFA Playoff C Winner", "away_team": "United States" }
+        ],
+        "Group E": [
+            { "match_nro": 9, "date": "2026-06-14", "home_team": "Germany", "away_team": "Curacao" },
+            { "match_nro": 10, "date": "2026-06-14", "home_team": "Ivory Coast", "away_team": "Ecuador" },
+            { "match_nro": 33, "date": "2026-06-20", "home_team": "Germany", "away_team": "Ivory Coast" },
+            { "match_nro": 34, "date": "2026-06-20", "home_team": "Ecuador", "away_team": "Curacao" },
+            { "match_nro": 55, "date": "2026-06-25", "home_team": "Curacao", "away_team": "Ivory Coast" },
+            { "match_nro": 56, "date": "2026-06-25", "home_team": "Ecuador", "away_team": "Germany" }
+        ],
+        "Group F": [
+            { "match_nro": 11, "date": "2026-06-14", "home_team": "Netherlands", "away_team": "Japan" },
+            { "match_nro": 12, "date": "2026-06-14", "home_team": "UEFA Playoff B Winner", "away_team": "Tunisia" },
+            { "match_nro": 35, "date": "2026-06-20", "home_team": "Netherlands", "away_team": "UEFA Playoff B Winner" },
+            { "match_nro": 36, "date": "2026-06-20", "home_team": "Tunisia", "away_team": "Japan" },
+            { "match_nro": 57, "date": "2026-06-25", "home_team": "Japan", "away_team": "UEFA Playoff B Winner" },
+            { "match_nro": 58, "date": "2026-06-25", "home_team": "Tunisia", "away_team": "Netherlands" }
+        ],
+        "Group G": [
+            { "match_nro": 13, "date": "2026-06-15", "home_team": "Belgium", "away_team": "Egypt" },
+            { "match_nro": 14, "date": "2026-06-15", "home_team": "Iran", "away_team": "New Zealand" },
+            { "match_nro": 37, "date": "2026-06-21", "home_team": "Belgium", "away_team": "Iran" },
+            { "match_nro": 38, "date": "2026-06-21", "home_team": "New Zealand", "away_team": "Egypt" },
+            { "match_nro": 61, "date": "2026-06-26", "home_team": "Egypt", "away_team": "Iran" },
+            { "match_nro": 62, "date": "2026-06-26", "home_team": "New Zealand", "away_team": "Belgium" }
+        ],
+        "Group H": [
+            { "match_nro": 15, "date": "2026-06-15", "home_team": "Spain", "away_team": "Cape Verde" },
+            { "match_nro": 16, "date": "2026-06-15", "home_team": "Saudi Arabia", "away_team": "Uruguay" },
+            { "match_nro": 39, "date": "2026-06-21", "home_team": "Spain", "away_team": "Saudi Arabia" },
+            { "match_nro": 40, "date": "2026-06-21", "home_team": "Uruguay", "away_team": "Cape Verde" },
+            { "match_nro": 63, "date": "2026-06-26", "home_team": "Cape Verde", "away_team": "Saudi Arabia" },
+            { "match_nro": 64, "date": "2026-06-26", "home_team": "Uruguay", "away_team": "Spain" }
+        ],
+        "Group I": [
+            { "match_nro": 17, "date": "2026-06-16", "home_team": "France", "away_team": "Senegal" },
+            { "match_nro": 18, "date": "2026-06-16", "home_team": "Playoff 1 Winner", "away_team": "Norway" },
+            { "match_nro": 41, "date": "2026-06-22", "home_team": "France", "away_team": "Playoff 1 Winner" },
+            { "match_nro": 42, "date": "2026-06-22", "home_team": "Norway", "away_team": "Senegal" },
+            { "match_nro": 65, "date": "2026-06-26", "home_team": "Senegal", "away_team": "Playoff 1 Winner" },
+            { "match_nro": 66, "date": "2026-06-26", "home_team": "Norway", "away_team": "France" }
+        ],
+        "Group J": [
+            { "match_nro": 19, "date": "2026-06-16", "home_team": "Argentina", "away_team": "Algeria" },
+            { "match_nro": 20, "date": "2026-06-16", "home_team": "Austria", "away_team": "Jordan" },
+            { "match_nro": 43, "date": "2026-06-22", "home_team": "Argentina", "away_team": "Austria" },
+            { "match_nro": 44, "date": "2026-06-22", "home_team": "Jordan", "away_team": "Algeria" },
+            { "match_nro": 67, "date": "2026-06-27", "home_team": "Algeria", "away_team": "Austria" },
+            { "match_nro": 68, "date": "2026-06-27", "home_team": "Jordan", "away_team": "Argentina" }
+        ],
+        "Group K": [
+            { "match_nro": 21, "date": "2026-06-17", "home_team": "Portugal", "away_team": "Playoff 2 Winner" },
+            { "match_nro": 22, "date": "2026-06-17", "home_team": "Uzbekistan", "away_team": "Colombia" },
+            { "match_nro": 45, "date": "2026-06-23", "home_team": "Portugal", "away_team": "Uzbekistan" },
+            { "match_nro": 46, "date": "2026-06-23", "home_team": "Colombia", "away_team": "Playoff 2 Winner" },
+            { "match_nro": 69, "date": "2026-06-27", "home_team": "Playoff 2 Winner", "away_team": "Uzbekistan" },
+            { "match_nro": 70, "date": "2026-06-27", "home_team": "Colombia", "away_team": "Portugal" }
+        ],
+        "Group L": [
+            { "match_nro": 23, "date": "2026-06-17", "home_team": "England", "away_team": "Croatia" },
+            { "match_nro": 24, "date": "2026-06-17", "home_team": "Ghana", "away_team": "Panama" },
+            { "match_nro": 47, "date": "2026-06-23", "home_team": "England", "away_team": "Ghana" },
+            { "match_nro": 48, "date": "2026-06-23", "home_team": "Panama", "away_team": "Croatia" },
+            { "match_nro": 71, "date": "2026-06-27", "home_team": "Croatia", "away_team": "Ghana" },
+            { "match_nro": 72, "date": "2026-06-27", "home_team": "Panama", "away_team": "England" }
+        ]
+    }
 }

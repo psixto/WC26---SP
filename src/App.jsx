@@ -16,9 +16,7 @@ function App() {
           <Route path="/leaderBoard" element={<Leaderboard />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/prediction" element={
-            <ProtectedRoute>
               <Prediction />
-            </ProtectedRoute>
           } />
         </Routes>
       </>
