@@ -1,34 +1,35 @@
-export function MatchCard({ match }) {
-    return (
-        <div className="match-card">
-            <h3>{match.home_team} vs {match.away_team}</h3>
-            <p>Date: {match.date}</p>
-        </div>
-    )
+import styles from './Matches.module.css'
+import { useEffect, useState } from 'react'
+
+function TeamDisplay({ flagSrc, teamName, score }) {
+	const [flag, setFlag] = useState(null)
+	
+	useEffect(() => {
+		//TODO
+	}, [flagSrc])
+	
+	return (
+		<div>
+			<img src={flag} alt={`Bandera de ${teamName}`} />
+			<span>{teamName}</span>
+		</div>
+		)
 }
 
-// Sub-componente para la información del equipo
-const TeamDisplay = ({ flagSrc, teamName, score }) => (
-  <div>
-    <img src={flagSrc} alt={`Bandera de ${teamName}`} />
-    <span>{teamName}</span>
-  </div>
-);
-
-const MatchCard = ({ match }) => {
+export function MatchCard({ match }) {
   const { 
     home_team, 
     away_team, 
     date,
-  } = matchData;
+  } = match;
 
   return (
-    <article>
+    <article className={styles.matchCard}>
 
-      <section>
+      <section className={styles.matchInfo}>
         <TeamDisplay 
           flagSrc={match.home_team.flag} 
-          teamName={match.home_team.name} 
+          teamName={match.home_team} 
         />
 
         <div>
@@ -48,7 +49,6 @@ const MatchCard = ({ match }) => {
         <div>
           <time>{match.date}</time>
         </div>
-        <small>Auto-saving enabled • Last saved 12s ago</small>
       </footer>
     </article>
   );
