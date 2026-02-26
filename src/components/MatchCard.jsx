@@ -1,16 +1,29 @@
 import styles from './Matches.module.css'
 import { useEffect, useState } from 'react'
+import countryCodes from '../countries.json'
 
-function TeamDisplay({ flagSrc, teamName, score }) {
-	const [flag, setFlag] = useState(null)
-	
+function TeamDisplay({ teamName, score }) {
+  const [flagCode, setFlagCode] = useState('xx')
+  
 	useEffect(() => {
-		//TODO
-	}, [flagSrc])
+    const code = countryCodes[teamName]
+    if (code) {
+      setFlagCode(code)
+    } else {
+      console.warn(`No se encontró el código de país para ${teamName}`)
+    }
+  }, [teamName])
 	
+	console.log(`Mostrando bandera para ${teamName} con código ${flagCode}`)
+
 	return (
 		<div>
-			<img src={flag} alt={`Bandera de ${teamName}`} />
+			<img src={`https://flagcdn.com/16x12/${flagCode}.png`}
+					srcset={`https://flagcdn.com/32x24/${flagCode}.png 2x,
+						https://flagcdn.com/48x36/${flagCode}.png 3x`}
+					width="16"
+					height="12" 
+					alt={`Bandera de ${teamName}`}/>
 			<span>{teamName}</span>
 		</div>
 		)
@@ -28,7 +41,6 @@ export function MatchCard({ match }) {
 
       <section className={styles.matchInfo}>
         <TeamDisplay 
-          flagSrc={match.home_team.flag} 
           teamName={match.home_team} 
         />
 
@@ -39,8 +51,7 @@ export function MatchCard({ match }) {
         </div>
 
         <TeamDisplay 
-          flagSrc={match.away_team.flag} 
-          teamName={match.away_team.name} 
+          teamName={match.away_team} 
         />
       </section>
 
