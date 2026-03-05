@@ -20,7 +20,7 @@ function TeamDisplay({ teamName, score }) {
 		<div className={styles.countryDisplay}>
 			<article className={styles.flagContainer}>
 			<img src={`https://flagcdn.com/16x12/${flagCode}.png`}
-					srcset={`https://flagcdn.com/32x24/${flagCode}.png 2x,
+					srcSet={`https://flagcdn.com/32x24/${flagCode}.png 2x,
 						https://flagcdn.com/48x36/${flagCode}.png 3x`}
 					width="16"
 					height="12" 

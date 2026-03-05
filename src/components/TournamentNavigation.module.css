@@ -1,0 +1,25 @@
+.groupsNav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.groupsNav button {
+  padding: 0.5rem 1rem;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border: 0.1rem solid var(--border); 
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  & :hover {
+    background-color: var(--primary-hover);
+  }
+
+&.active {
+    background-color: var(--selected);
+  }
+}
