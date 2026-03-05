@@ -14,7 +14,6 @@ function TeamDisplay({ teamName, score }) {
     }
   }, [teamName])
 	
-	console.log(`Mostrando bandera para ${teamName} con código ${flagCode}`)
 
 	return (
 		<div className={styles.countryDisplay}>
