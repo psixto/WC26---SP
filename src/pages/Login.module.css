@@ -1,0 +1,70 @@
+
+
+.loginContainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( var(--primary),var(--background) );
+    background-size: cover;
+}
+
+
+.loginCard {
+    width: 24rem;
+    padding: 32px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--primary-light);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+}
+
+.formGroup {
+    margin-bottom: 16px;    
+}
+
+
+.formGroup label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #cfcfcf;
+}
+
+
+.formGroup .inputField {
+    width: 100%;
+    padding: 10px 12px;
+    border: 0.2rem solid var(--border);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.loginButton {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    background-color: var(--primary-light);
+}
+
+.loginButton:hover {
+  background-color: var(--primary-hover);
+}
+
+.loginButton:active {
+  background-color: var(--primary-hover);
+  transform: translateY(1px); 
+  
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}

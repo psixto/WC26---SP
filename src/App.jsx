@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/leaderBoard" element={<Leaderboard />} />
           <Route path="*" element={<NotFoundPage />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/prediction" element={
               <Prediction />
           } />
