@@ -46,4 +46,5 @@ main > section > img{
 .btnDisabled {
 	background-color: var(--border);
 	cursor: not-allowed;
+	pointer-events: none;
 }
