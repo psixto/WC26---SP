@@ -2,8 +2,8 @@ import styles from './Login.module.css'
 import { useAuth } from '../context/AuthContext.jsx'
 
 export function Login() {
-    const { setIsLoggedIn } = useAuth()
-    
+    const { isLoggedIn, logIn } = useAuth()
+    console.log(isLoggedIn)
     return (
         <div className={styles.loginContainer}>
             <form className={styles.loginCard}>
@@ -17,7 +17,7 @@ export function Login() {
                 </div>
                 <button type="submit" 
                 className={styles.loginButton}
-                onClick={ () => setIsLoggedIn(true) }>
+                onClick={logIn}>
                     Login</button>
             </form>
         </div>

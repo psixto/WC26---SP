@@ -6,7 +6,7 @@ export default function HomePage() {
     const { navigateTo } = useRouter()
     const { isLoggedIn } = useAuth()
     //TODO get prediction status to show button only when predictions are open or user has already made a prediction
-    
+    console.log(isLoggedIn)
     return (
         <main>
             <section className={styles.presentationContainer}>

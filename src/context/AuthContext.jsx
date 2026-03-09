@@ -10,12 +10,18 @@ export function AuthProvider({ children }) {
     const handleLogin = () => {
         isLoggedIn ? handleLogout() : navigateTo("./Login")
     }
+
+    const logIn = (e) => {
+        e.preventDefault()
+        setIsLoggedIn(true)
+    }
+
     const handleLogout = () => {
         setIsLoggedIn(false)
     }
 
     return (
-        <AuthContext.Provider value={{ isLoggedIn, handleLogin, handleLogout }}>
+        <AuthContext.Provider value={{ isLoggedIn, logIn, handleLogin, handleLogout }}>
             {children}
         </AuthContext.Provider>
     )
