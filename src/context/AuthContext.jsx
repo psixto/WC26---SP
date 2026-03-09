@@ -8,8 +8,7 @@ export function AuthProvider({ children }) {
     const { navigateTo } = useRouter()
 
     const handleLogin = () => {
-        navigateTo("./Login")
-        setIsLoggedIn(true)
+        isLoggedIn ? handleLogout() : navigateTo("./Login")
     }
     const handleLogout = () => {
         setIsLoggedIn(false)

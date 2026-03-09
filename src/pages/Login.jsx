@@ -1,5 +1,9 @@
 import styles from './Login.module.css'
+import { useAuth } from '../context/AuthContext.jsx'
+
 export function Login() {
+    const { setIsLoggedIn } = useAuth()
+    
     return (
         <div className={styles.loginContainer}>
             <form className={styles.loginCard}>
@@ -11,7 +15,10 @@ export function Login() {
                     <label htmlFor="password">Password</label>
                     <input className={styles.inputField} type="password" id="password" />
                 </div>
-                <button type="submit" className={styles.loginButton}>Login</button>
+                <button type="submit" 
+                className={styles.loginButton}
+                onClick={ () => setIsLoggedIn(true) }>
+                    Login</button>
             </form>
         </div>
     )
