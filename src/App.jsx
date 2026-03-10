@@ -1,11 +1,12 @@
+import { lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
-import Home from './pages/Home.jsx'
-import { Leaderboard } from './pages/Leaderboard.jsx'
-import NotFoundPage from './pages/NotFoundPage.jsx'
-import { Prediction } from './pages/Prediction.jsx'
-import { ProtectedRoute } from './components/ProtectedRoute.jsx'
-import { Login } from './pages/Login.jsx'
+
+const HomePage = lazy(() => import('./pages/Home.jsx'))
+const LeaderboardPage = lazy(() => import('./pages/Leaderboard.jsx'))
+const NotFound = lazy(() => import('./pages/NotFoundPage.jsx'))
+const PredictionPage = lazy(() => import('./pages/Prediction.jsx'))
+const LoginPage = lazy(() => import('./pages/Login.jsx'))
 
 function App() {
 
@@ -13,12 +14,12 @@ function App() {
       <>
         <Header  />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/leaderBoard" element={<Leaderboard />} />
-          <Route path="*" element={<NotFoundPage />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/leaderboard" element={<LeaderboardPage />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/prediction" element={
-              <Prediction />
+              <PredictionPage />
           } />
         </Routes>
       </>

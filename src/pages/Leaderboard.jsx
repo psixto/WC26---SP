@@ -3,7 +3,7 @@ import styles from './Leaderboard.module.css'
 import data from '../example-data.json'
 import { UserLeaderboardCard } from '../components/UserLeaderboardCard'
 
-export function Leaderboard() {
+export default function Leaderboard() {
     const [leaderboardData, setLeaderboardData] = useState([])
 
     useEffect(() => {

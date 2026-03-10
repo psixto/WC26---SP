@@ -1,7 +1,7 @@
 import styles from './Login.module.css'
 import { useAuth } from '../context/AuthContext.jsx'
 
-export function Login() {
+export default function Login() {
     const { isLoggedIn, logIn } = useAuth()
     console.log(isLoggedIn)
     return (

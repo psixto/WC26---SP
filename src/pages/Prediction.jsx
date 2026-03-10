@@ -2,7 +2,7 @@ import { useState } from "react"
 import data from '../provisional-matches.json'
 import { TournamentNavigation } from "../components/TournamentNavigation"
 
-export function Prediction() {
+export default function Prediction() {
     const [group, setGroup] = useState("Group A")
 
     return (
