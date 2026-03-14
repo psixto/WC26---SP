@@ -3,7 +3,6 @@ import { useAuth } from '../context/AuthContext.jsx'
 
 export default function Login( { onNavigateToRegister }) {
     const { isLoggedIn, logIn } = useAuth()
-    console.log(isLoggedIn)
     return (
         <div className={styles.loginContainer}>
             <form className={styles.loginCard}>
