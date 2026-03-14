@@ -1,7 +1,7 @@
 import styles from './Login.module.css'
 import { useAuth } from '../context/AuthContext.jsx'
 
-export default function Login() {
+export default function Login( { onNavigateToRegister }) {
     const { isLoggedIn, logIn } = useAuth()
     console.log(isLoggedIn)
     return (
@@ -25,7 +25,7 @@ export default function Login() {
                     <button 
                         type="button" 
                         className={styles.loginPageButton}
-                        onClick={() => alert('Registration is currently unavailable.')}>
+                        onClick={onNavigateToRegister}>
                         Register here
                     </button>
                 </div>

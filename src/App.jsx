@@ -1,14 +1,17 @@
 import { lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
+import { useRouter } from './hooks/useRouter.jsx'
 
 const HomePage = lazy(() => import('./pages/Home.jsx'))
 const LeaderboardPage = lazy(() => import('./pages/Leaderboard.jsx'))
 const NotFound = lazy(() => import('./pages/NotFoundPage.jsx'))
 const PredictionPage = lazy(() => import('./pages/Prediction.jsx'))
 const LoginPage = lazy(() => import('./pages/Login.jsx'))
+const RegisterPage = lazy(() => import('./pages/Register.jsx'))
 
 function App() {
+  const { navigateTo } = useRouter()
 
   return (
       <>
@@ -17,10 +20,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage onNavigateToRegister={() => navigateTo('/register')} />} />
           <Route path="/prediction" element={
               <PredictionPage />
           } />
+          <Route path="/register" element={<RegisterPage onNavigateToLogin={() => navigateTo('/login')} />} />
         </Routes>
       </>
   )
