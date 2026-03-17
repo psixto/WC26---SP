@@ -1,6 +1,7 @@
 import { useRouter } from "../hooks/useRouter.jsx"
 import styles from './Home.module.css'
 import { useAuth } from "../context/AuthContext.jsx"
+import { Podium } from "../components/Podium.jsx"
 
 export default function HomePage() {
     const { navigateTo } = useRouter()
@@ -20,6 +21,14 @@ export default function HomePage() {
                             Start Predicting
                         </button>
                 </div>
+            </section>
+            <section className={styles.wingetsContainer}>
+                <Podium users={[
+                    { username: "Alice", points: 150 },
+                    { username: "Bob", points: 120 },
+                    { username: "Charlie", points: 100 }
+                ]} />
+                
             </section>
         </main>
     )
