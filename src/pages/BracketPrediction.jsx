@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
 import { getMyQualifiers, getMyBracket, saveMyBracket } from '../api/bracket.js'
 import { BracketMatchCard } from '../components/BracketMatchCard.jsx'
+import { getFifaThirdAssignment, THIRD_SLOT_KEYS } from '../utils/fifaThirdPlaceTable.js'
 import styles from './BracketPrediction.module.css'
 import predStyles from './Prediction.module.css'
 
@@ -24,9 +25,26 @@ function buildQualifiersMap(qualifiers) {
     }
   }
 
-  thirds
-    .sort((a, b) => b.pred_points - a.pred_points || b.pred_gd - a.pred_gd || b.pred_gf - a.pred_gf)
-    .forEach((q, i) => { map[`3rd_${i + 1}`] = q })
+  // Sort thirds by predicted performance to get the top 8 qualifying groups
+  const sorted = thirds.sort((a, b) =>
+    b.pred_points - a.pred_points || b.pred_gd - a.pred_gd || b.pred_gf - a.pred_gf
+  )
+
+  // Build a group → qualifier object map for quick lookup
+  const thirdByGroup = Object.fromEntries(sorted.map(q => [q.group_name, q]))
+
+  // Apply FIFA Annex C table to assign each third to the correct R32 slot
+  const qualifyingGroups = sorted.slice(0, 8).map(q => q.group_name)
+  const assignment = getFifaThirdAssignment(qualifyingGroups)
+
+  if (assignment) {
+    for (const [slotKey, group] of Object.entries(assignment)) {
+      map[slotKey] = thirdByGroup[group]
+    }
+  } else {
+    // Fallback: rank-based assignment (shouldn't happen with valid group data)
+    sorted.slice(0, 8).forEach((q, i) => { map[THIRD_SLOT_KEYS[i]] = q })
+  }
 
   return map
 }
